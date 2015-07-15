@@ -2,6 +2,8 @@
 
 **ProxyGambit** is a simple anonymization device that allows you to access the Internet **from anywhere in the world** without revealing your true location or IP, fracturing your traffic from the Internet/IP through either a long distance radio link or a reverse tunneled GSM bridge that ultimately drops back onto the Internet and exits through a wireless network you're no where near.
 
+While a point to point link is supported, the reverse GSM-to-TCP bridge allows you to proxy from thousands of miles away with nothing other than a computer and Internet with no direct link back to your originating machine.
+
 [![ProxyGambit Directional Antenna to Laptop](http://samy.pl/proxygambit/laptop.png?x2)](http://samy.pl/proxygambit/laptopbig.png)
 
 A high speed (150Mbps+) link is available with direct line of sight from 10km+ away, or if further away, a 2G GSM connection produces a **reverse TCP tunnel serializing a shell** into the device accessible from anywhere in the world via the Internet or GSM. Either method **proxies your connection through local wifi networks near the device**, shielding and making it more difficult to determine your true location, IP and identity.
