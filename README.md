@@ -81,6 +81,8 @@ We use the Adafruit [FONA](https://github.com/adafruit/Adafruit_FONA_Library) li
 We use Raspberry Pi Wheezy (2015-05-05) image with network bridging via [bridge-utils](https://packages.debian.org/search?keywords=bridge-utils) and serial UART enabled to communicate with our microcontroller. Make sure to set up the wifi connection you want to use via `/etc/wpa_supplicant/wpa_supplicant.conf`, or you can serial in over GSM later on to connect to a network.
 
 ### netcat
+The SIM800 is not able to open listening sockets, but is capable of making outbound TCP connections. We abuse this property to bridge traffic that was once IP into GSM traffic, but upon retrieval, we tunnel it back into IP through an entirely different, unrelated and physically separated network (the exit wifi node).
+
 From your own server (defined in pg_gsm_avr.ino), run:
 
 `nc -vlp 1337 # listens verbosely on port 1337`
