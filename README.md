@@ -10,8 +10,11 @@ ProxyGambit is an improvement and reincarnation of [ProxyHam](http://www.wired.c
 
 ProxyGambit improves upon ProxyHam not only by allowing a greater direct range, but also enables you to proxy from **anywhere in the world using just an Internet connection, which can then proxy through a reverse GSM serial link onto a public wifi network**.
 
+Once set up, no special hardware is needed to bridge through the GSM link and back out onto wifi -- just you, a computer and a net connection (which will not be as easily identified.)
+
+
 ```
-This is an insecure, bare bones proof of concept. The fragmentation of data through alternate mediums is a useful concept and those interested in privacy, anonymization, or deanonymization should explore this area further. Entropy is both gained and lost with these methods and many risks are involved when deploying any system of this nature.
+This is an insecure, bare bones proof of concept. The fragmentation of data through alternate mediums is a useful and effective concept and those interested in privacy, anonymization, or deanonymization should explore this area further. Entropy is both gained and lost with these methods and many risks are involved when deploying any system of this nature.
 ```
 
 by [@SamyKamkar](https://twitter.com/samykamkar) // <code@samy.pl> // <http://samy.pl> // Jul 14, 2015
