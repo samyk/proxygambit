@@ -18,7 +18,7 @@ This is an insecure, bare bones proof of concept. The fragmentation of data thro
 
 by [@SamyKamkar](https://twitter.com/samykamkar) // <code@samy.pl> // <http://samy.pl> // Jul 14, 2015
 
-Code available on [github](https://github.com/samyk/proxygambit)
+Code available on [github](https://github.com/samyk/proxygambit), Linux image available [here](http://waiting.for.upload.to.finish)
 
 
 ------
@@ -71,7 +71,7 @@ password: donttracemebro
 
 # Software
 
-All necessary software and Linux image is available from my github: <https://github.com/samyk/proxygambit>
+Code @ <https://github.com/samyk/proxygambit> & [Linux image here](http://waiting.for.upload)
 
 ### ProxyGambit (Arduino + GSM Link)
 The microcontroller code produces a serial connection over a reverse TCP tunnel through a 2G GSM link and ties it to the UART serial lines of the Raspberry Pi. Compile this onto your Arduino, but be sure to change the TCP_PORT and TCP_HOST definitions in pg_gsm_avr.ino to connect to your own server. We abuse the fact that the SIM800 GSM chip allows only outbound TCP connections and produce a reverse tunnel. The hardware serial lines are hardwired (with a voltage divider) to the Raspberry Pi's serial, and we employ software serial to communicate to the FONA board.
@@ -94,13 +94,18 @@ From your own server (defined in pg_gsm_avr.ino), run:
 [![ProxyGambit Arduino](http://samy.pl/proxygambit/IMG_3139sm.JPG)](http://samy.pl/proxygambit/IMG_3139.JPG)
 
 
-# Schematic
+# Wiring
 
 Available from [github](https://github.com/samyk/proxygambit)
 
+* Use a ~1.6k resistor between RPi RX and Arduino TX and a ~3.3k resistor between RPi RX and Arduino ground
+* Connect lipo and antenna to FONA
+* Power RPi from USB hub
+* Send main USB hub cable into any RPi USB port
+* Connect wifi card to USB hub
+* Connect Ubiquiti to RPi ethernet
 
 [![ProxyGambit Arduino](http://samy.pl/proxygambit/proxygambit_bb.png)](http://samy.pl/proxygambit/proxygambit_bbbig.png)
-
 
 
 -----
@@ -109,6 +114,6 @@ Available from [github](https://github.com/samyk/proxygambit)
 
 Contact on the twitters [@SamyKamkar](https://twitter.com/samykamkar)
 
-More projects at <http://samy.pl> or sometimes reachable @ <code@samy.pl>
+More projects at <http://samy.pl> or reachable @ <code@samy.pl>
 
 ------
