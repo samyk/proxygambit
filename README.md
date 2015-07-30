@@ -18,7 +18,7 @@ Once set up, no special hardware is needed to bridge through the GSM link and ba
 
 by [@SamyKamkar](https://twitter.com/samykamkar) // <code@samy.pl> // <http://samy.pl> // Jul 14, 2015
 
-Code available on [github](https://github.com/samyk/proxygambit), Linux image available [here](https://www.dropbox.com/s/9we0k3muz175rga/proxygambit-2015-05-05-raspbian-wheezy.img.zip?dl=0)
+Code available on [github](https://github.com/samyk/proxygambit), Linux image available [here](https://mega.nz/#!5JAzTKjC!XUlpWcnsqpTOUtU_-QY0lh7gy-hE9gf1rZyPa2IsFdQ)
 
 
 ------
@@ -71,7 +71,7 @@ password: donttracemebro
 
 # Software
 
-Code @ <https://github.com/samyk/proxygambit> & [Linux image here](https://www.dropbox.com/s/9we0k3muz175rga/proxygambit-2015-05-05-raspbian-wheezy.img.zip?dl=0)
+Code @ <https://github.com/samyk/proxygambit> & [Linux image here](https://mega.nz/#!5JAzTKjC!XUlpWcnsqpTOUtU_-QY0lh7gy-hE9gf1rZyPa2IsFdQ)
 
 ### ProxyGambit (Arduino + GSM Link)
 The microcontroller code produces a serial connection over a reverse TCP tunnel through a 2G GSM link and ties it to the UART serial lines of the Raspberry Pi. Compile this onto your Arduino, but be sure to change the TCP_PORT and TCP_HOST definitions in pg_gsm_avr.ino to connect to your own server. We abuse the fact that the SIM800 GSM chip allows only outbound TCP connections and produce a reverse tunnel. The hardware serial lines are hardwired (with a voltage divider) to the Raspberry Pi's serial, and we employ software serial to communicate to the FONA board.
